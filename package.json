@@ -1,0 +1,28 @@
+{
+  "name": "cloud-build-notifier",
+  "version": "0.0.1",
+  "description": "Slack integration for Google Cloud Build, using Google Cloud Functions",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "check": "node --check ."
+  },
+  "dependencies": {
+    "@slack/webhook": "5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "repository": {
+    "url": "https://github.com/APImetrics/CloudBuildNotifier",
+    "type": "git"
+  },
+  "license": "Apache-2.0",
+  "author": "Nick Denny, APImetrics",
+  "bugs": {
+    "url": "https://github.com/APImetrics/CloudBuildNotifier/issues"
+  },
+  "homepage": "https://github.com/APImetrics/CloudBuildNotifier#readme"
+}
