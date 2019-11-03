@@ -27,6 +27,7 @@ const createSlackMessage = (build) => {
         ...build.steps.map((step) => ({
           title: `${step.name} ${step.entrypoint} ${step.args.join(' ')}`,
           value: step.status,
+          short: true,
           color: colorMap[step.status],
         })),
       ],
