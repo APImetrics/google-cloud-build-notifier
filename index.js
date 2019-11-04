@@ -34,6 +34,7 @@ const createSlackMessage = (build) => {
     },
     ],
   };
+  // Share repo info in footer
   if (build.substitutions) {
     message.footer = `${build.substitutions.REPO_NAME}: ${build.substitutions.BRANCH_NAME} - ${build.substitutions.SHORT_SHA}`;
   }
