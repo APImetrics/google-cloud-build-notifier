@@ -34,6 +34,9 @@ const createSlackMessage = (build) => {
     },
     ],
   };
+  if (build.substitutions) {
+    message.footer = `${build.substitutions.REPO_NAME}: ${build.substitutions.BRANCH_NAME} - ${build.substitutions.SHORT_SHA}`;
+  }
   return message;
 };
 
