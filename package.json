@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@slack/webhook": "5.0.2",
-    "humanize-duration": "^3.21.0"
+    "humanize-duration": "^3.23.1"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
