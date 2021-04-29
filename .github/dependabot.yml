@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "09:30"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: humanize-duration
+    versions:
+    - 3.25.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
